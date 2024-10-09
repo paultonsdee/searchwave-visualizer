@@ -14,13 +14,15 @@ const ImageModal = ({ image, onClose, onSearchSimilar }) => {
             Details about the related video
           </DialogDescription>
         </DialogHeader>
-        <div className="flex-grow flex flex-col md:flex-row gap-4 overflow-auto">
-          <div className="w-full md:w-2/3 aspect-[1278/720]">
+        <div className="flex-grow flex flex-col overflow-auto">
+          <div className="mb-4">
+            <h3 className="text-lg font-semibold mb-2">Image Details</h3>
+            <p>Additional information about the image and related video would go here.</p>
+          </div>
+          <div className="w-full aspect-[1278/720] mb-4">
             <img src={image.url} alt={image.code} className="w-full h-full object-cover rounded-lg" />
           </div>
-          <div className="w-full md:w-1/3 overflow-y-auto">
-            <h3 className="text-lg font-semibold mb-2">Image Details</h3>
-            <p className="mb-4">Additional information about the image and related video would go here. This section can be scrolled independently if the content exceeds the available space.</p>
+          <div>
             <h3 className="text-lg font-semibold mb-2">Related Video Information</h3>
             <p>More details about the video, such as duration, upload date, views, etc., can be displayed here.</p>
           </div>
