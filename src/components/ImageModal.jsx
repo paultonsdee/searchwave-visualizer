@@ -7,7 +7,7 @@ const ImageModal = ({ image, onClose, onSearchSimilar }) => {
 
   return (
     <Dialog open={!!image} onOpenChange={onClose}>
-      <DialogContent className="w-11/12 max-w-[1300px] h-[90vh] max-h-[90vh] flex flex-col">
+      <DialogContent className="w-11/12 max-w-[1600px] h-[90vh] max-h-[90vh] flex flex-col">
         <DialogHeader>
           <DialogTitle>{image.code}</DialogTitle>
           <DialogDescription>
@@ -19,8 +19,10 @@ const ImageModal = ({ image, onClose, onSearchSimilar }) => {
             <h3 className="text-lg font-semibold mb-2">Image Details</h3>
             <p>Additional information about the image and related video would go here.</p>
           </div>
-          <div className="w-full aspect-[1278/720] mb-4">
-            <img src={image.url} alt={image.code} className="w-full h-full object-cover rounded-lg" />
+          <div className="w-full max-w-[980px] mx-auto mb-4">
+            <div className="aspect-[980/552]">
+              <img src={image.url} alt={image.code} className="w-full h-full object-cover rounded-lg" />
+            </div>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-2">Related Video Information</h3>
