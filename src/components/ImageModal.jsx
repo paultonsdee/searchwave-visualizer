@@ -15,7 +15,7 @@ const ImageModal = ({ image, onClose, onSearchSimilar }) => {
           </DialogDescription>
         </DialogHeader>
         <div className="flex-grow flex flex-col md:flex-row gap-4 overflow-auto">
-          <div className="w-full md:w-1/2 aspect-w-16 aspect-h-9">
+          <div className="w-full md:w-1/2 aspect-w-9 aspect-h-16">
             <img src={image.url} alt={image.code} className="w-full h-full object-cover rounded-lg" />
           </div>
           <div className="w-full md:w-1/2 overflow-y-auto">

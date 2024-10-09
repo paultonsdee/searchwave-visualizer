@@ -18,7 +18,7 @@ const ImageGrid = ({ images, onImageClick }) => {
               <ThumbsDown className="h-4 w-4 text-white" />
             </Button>
           </div>
-          <div className="aspect-w-16 aspect-h-9 overflow-hidden rounded-lg">
+          <div className="aspect-w-9 aspect-h-16 overflow-hidden rounded-lg">
             <img
               src={image.url}
               alt={image.code}
